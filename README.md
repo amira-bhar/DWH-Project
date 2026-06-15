@@ -26,10 +26,15 @@ End-to-end data warehouse implementation using Bronze → Silver → Gold layers
 
 ## Folder Structure
 ├── sql/
+
 │ ├── 01_bronze/ # Table creation + data loading
+
 │ ├── 02_silver/ # Cleansing + standardization
+
 │ └── 03_gold/ # Dimensions + fact tables
+
 ├── docs/ # Documentation
+
 └── reports/ # Project report
 
 ## How to Run
@@ -37,8 +42,11 @@ End-to-end data warehouse implementation using Bronze → Silver → Gold layers
 CREATE DATABASE DataWarehouse;
 
 -- 2. Run scripts in order
+
 EXEC load_bronze;
+
 EXEC load_silver;
+
 EXEC load_gold;
 
 ## Author
